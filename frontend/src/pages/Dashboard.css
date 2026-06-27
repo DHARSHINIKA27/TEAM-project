@@ -1,0 +1,231 @@
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Sidebar Menu */
+.dash-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  gap: 0.5rem;
+}
+
+.sidebar-tab {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.sidebar-tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+[data-theme="light"] .sidebar-tab:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-tab.active {
+  background: var(--color-brand);
+  color: #ffffff;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: var(--glass-border);
+  margin: 0.75rem 0;
+}
+
+/* Workspace Panels */
+.dash-workspace {
+  min-height: 500px;
+}
+
+.tab-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pane-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 1rem;
+}
+
+.pane-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Stats Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.stat-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.stat-card h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stat-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+/* Custom Chart Box */
+.telemetry-chart-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+}
+
+.telemetry-svg {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  overflow: visible;
+}
+
+/* Log Rows list */
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.log-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  gap: 1.5rem;
+}
+
+.log-row.unread-bg {
+  border-left: 3px solid var(--color-brand);
+  background: rgba(0, 120, 212, 0.03);
+}
+
+.row-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 150px;
+}
+
+.row-subject {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
+
+.row-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.row-btn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.row-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+.read-btn:hover {
+  color: var(--color-brand);
+  border-color: rgba(0, 120, 212, 0.3);
+}
+
+.view-btn:hover {
+  color: var(--color-accent-teal);
+  border-color: rgba(0, 183, 195, 0.3);
+}
+
+.edit-btn:hover {
+  color: var(--color-warning);
+  border-color: rgba(255, 185, 0, 0.3);
+}
+
+.delete-btn:hover {
+  color: var(--color-error);
+  border-color: rgba(168, 0, 0, 0.3);
+}
+
+.empty-logs {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border: 1px dashed var(--glass-border);
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 900px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+  .dash-sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+  }
+  .sidebar-tab {
+    flex-shrink: 0;
+    padding: 0.5rem 0.75rem;
+  }
+  .sidebar-divider {
+    display: none;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

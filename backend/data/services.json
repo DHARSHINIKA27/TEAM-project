@@ -1,0 +1,38 @@
+[
+  {
+    "id": "srv-1",
+    "name": "Cloud & Infrastructure Services",
+    "description": "Design, build, and optimize enterprise-scale multi-cloud and hybrid environments leveraging modern IaC and DevSecOps.",
+    "icon": "Cloud",
+    "details": "Our enterprise cloud services cover design, migration, implementation, and operations on Azure, AWS, and Hybrid infrastructure. We utilize automated Terraform pipelines, Kubernetes orchestration, and deep monitoring to ensure 99.99% availability.",
+    "status": "active",
+    "createdAt": "2026-06-26T03:52:17.614Z"
+  },
+  {
+    "id": "srv-2",
+    "name": "AI & Cognitive Engineering",
+    "description": "Embed advanced Machine Learning, Large Language Models, and automated telemetry analytics into core business workflows.",
+    "icon": "Cpu",
+    "details": "Accelerate digital transformation by training custom models, integrating generative AI applications, and orchestrating massive datasets securely under enterprise compliance rules.",
+    "status": "active",
+    "createdAt": "2026-06-26T03:52:17.614Z"
+  },
+  {
+    "id": "srv-3",
+    "name": "Zero-Trust Cybersecurity",
+    "description": "Enforce strict identity validation, persistent threat intelligence, and next-generation SIEM network protection.",
+    "icon": "Shield",
+    "details": "We establish modern security operations centers, conduct penetration testing, build incident response playbooks, and architect Zero-Trust policies across networks, endpoints, and identity directories.",
+    "status": "active",
+    "createdAt": "2026-06-26T03:52:17.614Z"
+  },
+  {
+    "id": "srv-4",
+    "name": "Managed IT & Advisory",
+    "description": "Provide persistent 24/7 technical operations support, cost optimization audits, and strategic C-level consulting.",
+    "icon": "Globe",
+    "details": "Offload daily system updates, helpdesk solutions, and patch management while our consulting specialists design your IT modernization roadmaps and security audits.",
+    "status": "active",
+    "createdAt": "2026-06-26T03:52:17.614Z"
+  }
+]

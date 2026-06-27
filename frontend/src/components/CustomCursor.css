@@ -1,0 +1,65 @@
+/* Hides default cursor on desktop systems with precise pointers */
+@media (pointer: fine) {
+  body, a, button, input, select, textarea, .fluent-card {
+    cursor: none !important;
+  }
+}
+
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-brand);
+  margin-top: -3px;
+  margin-left: -3px;
+  transition: width 0.15s ease, height 0.15s ease, background-color 0.15s ease;
+}
+
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--color-brand);
+  margin-top: -16px;
+  margin-left: -16px;
+  background-color: transparent;
+  transition: 
+    width 0.25s cubic-bezier(0.25, 1, 0.5, 1), 
+    height 0.25s cubic-bezier(0.25, 1, 0.5, 1), 
+    background-color 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+    border-color 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.15s ease;
+}
+
+/* Hover States (when mouse lies over buttons/links) */
+.cursor-dot.cursor-hover {
+  width: 4px;
+  height: 4px;
+  margin-top: -2px;
+  margin-left: -2px;
+  background-color: var(--color-accent-teal);
+}
+
+.cursor-ring.cursor-hover {
+  width: 48px;
+  height: 48px;
+  margin-top: -24px;
+  margin-left: -24px;
+  border-color: var(--color-accent-teal);
+  background-color: rgba(0, 130, 114, 0.05);
+  box-shadow: 0 0 15px rgba(0, 130, 114, 0.2);
+}
+
+/* Hidden state (when cursor leaves the browser viewport) */
+.cursor-hidden {
+  opacity: 0;
+}

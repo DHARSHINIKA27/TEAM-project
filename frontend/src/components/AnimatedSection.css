@@ -1,0 +1,47 @@
+.reveal-section {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition-property: transform, opacity;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1); /* Premium ease-out expo curve */
+}
+
+/* 1. Fade In Up (Classic Microsoft transition) */
+.reveal-fade-in-up {
+  transform: translate3d(0, 35px, 0);
+}
+
+.reveal-fade-in-up.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* 2. Zoom In */
+.reveal-zoom-in {
+  transform: scale3d(0.96, 0.96, 1);
+}
+
+.reveal-zoom-in.is-visible {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+/* 3. Slide In Left */
+.reveal-slide-in-left {
+  transform: translate3d(-40px, 0, 0);
+}
+
+.reveal-slide-in-left.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* 4. Slide In Right */
+.reveal-slide-in-right {
+  transform: translate3d(40px, 0, 0);
+}
+
+.reveal-slide-in-right.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

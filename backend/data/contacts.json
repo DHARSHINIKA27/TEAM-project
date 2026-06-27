@@ -1,0 +1,13 @@
+[
+  {
+    "id": "cnt-1",
+    "name": "Robert Chen",
+    "email": "r.chen@logitech-global.com",
+    "company": "Logitech Global",
+    "subject": "Migration RFP inquiry",
+    "message": "Hello, we are interested in scheduling a consultation regarding our database migration roadmap. We would appreciate a response within the week.",
+    "status": "read",
+    "createdAt": "2026-06-26T03:52:17.627Z",
+    "updatedAt": "2026-06-26T04:11:00.614Z"
+  }
+]

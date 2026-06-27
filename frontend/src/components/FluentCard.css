@@ -1,0 +1,57 @@
+.fluent-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 1.75rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transform-style: preserve-3d; /* Creates 3D rendering context */
+  will-change: transform;
+}
+
+/* Glow spotlight border layer */
+.fluent-card-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  border: 1px solid transparent;
+  background: radial-gradient(
+    220px circle at var(--mouse-x) var(--mouse-y),
+    var(--glow-color),
+    transparent 80%
+  );
+  -webkit-mask: 
+    linear-gradient(#fff, #fff) content-box, 
+    linear-gradient(#fff, #fff);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.fluent-card:hover .fluent-card-glow {
+  opacity: 1;
+}
+
+/* Push content forward in Z-space to create parallax layering */
+.fluent-card-content {
+  position: relative;
+  z-index: 2;
+  transform: translateZ(25px); /* Creates structural depth gap */
+  transform-style: preserve-3d;
+}
+
+/* Dark theme specific settings */
+[data-theme="dark"] .fluent-card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Light theme specific settings */
+[data-theme="light"] .fluent-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}

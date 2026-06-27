@@ -1,0 +1,28 @@
+[
+  {
+    "id": "blog-1",
+    "title": "Navigating the Shift to Hybrid Multi-Cloud Platforms",
+    "excerpt": "As enterprises scale, single-cloud solutions present vendor lock-in risks. Here is how we design resilient hybrid cloud topologies.",
+    "content": "Hybrid and multi-cloud configurations are no longer just optional contingencies; they are key tactical necessities for scaling global enterprises. Leveraging a combination of public cloud features (Azure/AWS) and private servers helps businesses lower operating expenditures, isolate secure customer data databases, and secure zero downtime during global routing outages.\n\nIn this article, we outline best practices for planning networks, implementing Infrastructure as Code (IaC) with Terraform, and orchestrating containers across disparate cloud zones.",
+    "author": "Marcus Vance (VP of Infrastructure)",
+    "date": "2026-05-12",
+    "readTime": "6 min read",
+    "category": "Cloud Strategy",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "status": "published",
+    "createdAt": "2026-06-26T03:52:17.626Z"
+  },
+  {
+    "id": "blog-2",
+    "title": "Deploying LLMs Safely in Enterprise Environments",
+    "excerpt": "Integrating AI with private database files requires thorough compliance, audit logs, and strict access controls.",
+    "content": "AI integrations bring immense automation capabilities to modern customer portals, internal documents indexing, and tech support chats. However, corporate compliance requires that sensitive financial, patient, or client databases are never leaked to open public model API calls.\n\nTo safely capitalize on GenAI tools, organizations must implement enterprise AI gateways, configure secure vector caches, and establish role-based telemetry audits.",
+    "author": "Dr. Elena Rostova (Chief AI Scientist)",
+    "date": "2026-06-08",
+    "readTime": "8 min read",
+    "category": "AI & Data Science",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80",
+    "status": "published",
+    "createdAt": "2026-06-26T03:52:17.626Z"
+  }
+]

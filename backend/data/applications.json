@@ -1,0 +1,27 @@
+[
+  {
+    "id": "app-1",
+    "jobId": "car-1",
+    "jobTitle": "Senior Cloud Solutions Architect",
+    "applicantName": "Sarah Jenkins",
+    "email": "sarah.jenkins@example.com",
+    "phone": "+1 555-0199",
+    "coverLetter": "I am an AWS and Azure Certified Architect with 9 years of experience. I would love to build next-generation enterprise solutions with your team.",
+    "resumeLink": "https://example.com/resumes/sarah_jenkins_resume.pdf",
+    "status": "pending",
+    "appliedDate": "2026-06-26T03:52:17.625Z"
+  },
+  {
+    "id": "app-1782446989955-742",
+    "jobId": "car-1",
+    "jobTitle": "Senior Cloud Solutions Architect",
+    "applicantName": "dharshinika",
+    "email": "sakthishri.rg@gmail.com",
+    "phone": "7708046390",
+    "coverLetter": "hi hlo welcome to neuralit",
+    "resumeLink": "http://example.com/resume.pdf",
+    "status": "pending",
+    "appliedDate": "2026-06-26T04:09:49.953Z",
+    "createdAt": "2026-06-26T04:09:49.955Z"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "proj-1",
+    "title": "FinTech Cloud Migration",
+    "description": "Migrating legacy transactional systems of a major financial client to a secure, PCI-DSS compliant Azure Kubernetes Cluster.",
+    "category": "Cloud Architecture",
+    "client": "Global Apex Bank",
+    "completionDate": "2025-11-20",
+    "status": "completed",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    "createdAt": "2026-06-26T03:52:17.615Z"
+  },
+  {
+    "id": "proj-2",
+    "title": "AI Predictive Supply Chain",
+    "description": "Building custom machine learning engines that predict logistics delays and dynamically reschedule vendor routes.",
+    "category": "AI & Machine Learning",
+    "client": "Logix Global Corp",
+    "completionDate": "2026-03-15",
+    "status": "completed",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    "createdAt": "2026-06-26T03:52:17.615Z"
+  },
+  {
+    "id": "proj-3",
+    "title": "Zero-Trust Identity Implementation",
+    "description": "Rolling out centralized multi-factor, conditional-access identity parameters to over 45,000 endpoint networks.",
+    "category": "Cybersecurity",
+    "client": "OmniHealth Medical",
+    "completionDate": "2026-08-01",
+    "status": "ongoing",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    "createdAt": "2026-06-26T03:52:17.615Z"
+  }
+]

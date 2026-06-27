@@ -1,0 +1,35 @@
+[
+  {
+    "id": "car-1",
+    "title": "Senior Cloud Solutions Architect",
+    "department": "Infrastructure & DevOps",
+    "location": "Redmond, WA (Hybrid)",
+    "type": "Full-time",
+    "description": "Join our enterprise solutions division to design robust multi-cloud systems for Fortune 500 organizations.",
+    "requirements": "8+ years of cloud architecture experience; Certification in Azure (Solutions Architect Expert) or AWS (Solutions Architect Professional); Terraform expertise.",
+    "status": "active",
+    "createdAt": "2026-06-26T03:52:17.615Z"
+  },
+  {
+    "id": "car-2",
+    "title": "AI/ML Engineering Specialist",
+    "department": "Cognitive Engineering",
+    "location": "Remote (US/Canada)",
+    "type": "Full-time",
+    "description": "Develop, deploy, and scale machine learning pipelines and integrate Large Language Models with client systems.",
+    "requirements": "Strong coding proficiency in Python and C++; Expertise in PyTorch, HuggingFace transformers, and vector databases (Pinecone, ChromaDB); 4+ years ML experience.",
+    "status": "active",
+    "createdAt": "2026-06-26T03:52:17.615Z"
+  },
+  {
+    "id": "car-3",
+    "title": "Security Operations Analyst",
+    "department": "Cybersecurity",
+    "location": "New York, NY (On-site)",
+    "type": "Full-time",
+    "description": "Monitor networks, analyze security logs, investigate security alerts, and execute incident response procedures.",
+    "requirements": "CompTIA Security+, CEH, or equivalent; Proficiency with SIEM platforms (Splunk, Microsoft Sentinel); 2+ years of cybersecurity experience.",
+    "status": "active",
+    "createdAt": "2026-06-26T03:52:17.615Z"
+  }
+]
